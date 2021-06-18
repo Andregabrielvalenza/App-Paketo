@@ -1,0 +1,27 @@
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>-->
+
+<ion-content>
+  <div class="div-center">
+    <ion-card class="card-slide top-slider"></ion-card>
+  </div>
+  <h1 class="ion-text-center top-titulo">Ingresa a tu cuenta</h1>
+  <form>
+    <ion-item lines="none" class="item-input" mode="ios">
+      <ion-input mode="ios" type="email" placeholder="Correo"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="item-input item-top" mode="ios">
+      <ion-input mode="ios" type="password" placeholder="Contraseña" class=""></ion-input>
+      <ion-icon name="help-circle-sharp" class="iconinterrogativo"></ion-icon>
+    </ion-item>
+  </form>
+  <ion-button mode="ios" class="btn-login" (click)="view_contrana()">Entrar</ion-button>
+  <p class="p-contrasena ion-text-center">¿Olvidaste tu contraseña? <span><ins>Recuperala aqui</ins></span></p>
+</ion-content>
+<ion-footer class="ion-no-border" mode="ios">
+  <p class="p-foooter">¿No tienes usuario?</p>
+  <ion-button class="btn-footer" mode="ios">Contáctanos</ion-button>
+</ion-footer>
