@@ -35,6 +35,14 @@ const routes: Routes = [
     path: 'confirmar-datos',
     loadChildren: () => import('./confirmar-datos/confirmar-datos.module').then( m => m.ConfirmarDatosPageModule)
   },
+  {
+    path: 'onboarding-no-usuario',
+    loadChildren: () => import('./onboarding-no-usuario/onboarding-no-usuario.module').then( m => m.OnboardingNoUsuarioPageModule)
+  },
+  {
+    path: 'registro-sucursal-slider',
+    loadChildren: () => import('./registro-sucursal-slider/registro-sucursal-slider.module').then( m => m.RegistroSucursalSliderPageModule)
+  },
 ];
 
 @NgModule({

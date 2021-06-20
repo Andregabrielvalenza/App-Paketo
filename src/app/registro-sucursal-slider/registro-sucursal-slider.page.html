@@ -1,0 +1,93 @@
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>registro-sucursal-slider</ion-title>
+  </ion-toolbar>
+</ion-header>-->
+
+<ion-content>
+  <ion-slides pager="false" [options]="slideOpts">
+    <ion-slide>
+      <h1 class="ion-text-center top-slider bottom-cero">Ferreterías</h1>
+      <p class="p-medium ion-text-center p-top">Si tienes más de una ferretería, podrás registrarla más adelante</p>
+      <div class="div-top-uno">
+        <h6 class="h6-nombres-campos">Nombre</h6>
+        <ion-item lines="none" class="item-input">
+          <ion-input placeholder="Ingresa el nombre de la ferretería"></ion-input>
+        </ion-item>
+      </div>
+      <div class="div-top-dos">
+        <h6 class="h6-nombres-campos h6-bottom-perfil">Foto de perfil</h6>
+        <div class="div-foto">
+          <!--En la etiqueta de ion-card las fotos lo ponees de fondo con la clase "card-fondo-img"-->
+          <ion-card class="card-foto card-fondo-img">
+            <ion-button mode="ios" class="btn-add-fotos"><ion-icon name="add-outline" class="icon-add"></ion-icon></ion-button>
+          </ion-card>
+          <ion-label class="label-foto">Agrega tu foto</ion-label>
+        </div>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <h1 class="ion-text-center top-slider bottom-cero">Ubicación</h1>
+      <p class="p-medium ion-text-center p-top">Esta información es importante para que podamos entregar tu pedido lo más rápido posible</p>
+      <h6 class="h6-nombres-campos h6-top-bottom">Ubicación</h6>
+      <ion-item lines="none" class="item-input">
+        <ion-select interface="action-sheet" placeholder="Departamento">
+          <ion-select-option value="brown">Brown</ion-select-option>
+          <ion-select-option value="blonde">Blonde</ion-select-option>
+          <ion-select-option value="black">Black</ion-select-option>
+          <ion-select-option value="red">Red</ion-select-option>
+        </ion-select>
+        <ion-icon name="chevron-down-outline" class="icon-slect"></ion-icon>
+      </ion-item>
+      <ion-item lines="none" class="item-input item-top">
+        <ion-select interface="action-sheet" placeholder="Provincia">
+          <ion-select-option value="brown">Brown</ion-select-option>
+          <ion-select-option value="blonde">Blonde</ion-select-option>
+          <ion-select-option value="black">Black</ion-select-option>
+          <ion-select-option value="red">Red</ion-select-option>
+        </ion-select>
+        <ion-icon name="chevron-down-outline" class="icon-slect"></ion-icon>
+      </ion-item>
+      <ion-item lines="none" class="item-input item-top">
+        <ion-select interface="action-sheet" placeholder="Distrito">
+          <ion-select-option value="brown">Brown</ion-select-option>
+          <ion-select-option value="blonde">Blonde</ion-select-option>
+          <ion-select-option value="black">Black</ion-select-option>
+          <ion-select-option value="red">Red</ion-select-option>
+        </ion-select>
+        <ion-icon name="chevron-down-outline" class="icon-slect"></ion-icon>
+      </ion-item>
+      <ion-item lines="none" class="item-input item-top">
+        <ion-input placeholder="Dirección linea 1"></ion-input>
+      </ion-item>
+      <ion-card class="card-mapa">
+
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <h1 class="ion-text-center top-slider bottom-cero">Ubicación</h1>
+      <p class="p-medium ion-text-center p-top">¿Con quién nos debemos comunicar acerca de tus pedidos?</p>
+      <h6 class="h6-nombres-campos h6-top-bottom">Datos de tienda</h6>
+      <ion-item lines="none" class="item-input">
+        <ion-input placeholder="Persona de contacto" type="text"></ion-input>
+      </ion-item>
+      <ion-item lines="none" class="item-input item-top">
+        <ion-input placeholder="Telefono" type="number"></ion-input>
+      </ion-item>
+      <ion-item lines="none" class="item-input item-top">
+        <ion-input placeholder="Correo electrónico" type="email"></ion-input>
+      </ion-item>
+      <ion-item lines="none" class="item-check">
+        <ion-label class="label-check">Usar la misma perdona del contacto</ion-label>
+        <ion-checkbox slot="start"></ion-checkbox>
+      </ion-item>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+<ion-footer class="ion-no-border ion-text-center" mode="ios">
+  <ion-button mode="ios" class="btn-guardar">Empezamos</ion-button>
+  <div class="ion-text-center div-absolute-slider" style="display: none;">
+    <ion-button mode="ios" class="btn-guardar btn-widht-cero">Agregar sucursal</ion-button>
+    <ion-button mode="ios" class="btn-terminar">Terminar</ion-button>
+  </div>
+</ion-footer>
