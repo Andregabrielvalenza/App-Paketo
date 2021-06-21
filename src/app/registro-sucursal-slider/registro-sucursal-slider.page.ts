@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-registro-sucursal-slider',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroSucursalSliderPage implements OnInit {
 
-  constructor() { }
+  constructor(private navController: NavController) { }
 
   ngOnInit() {
   }
@@ -18,5 +19,9 @@ export class RegistroSucursalSliderPage implements OnInit {
     spaceBetween: 0,
     centeredSlides: true,
   };
+
+  view_onboarding_no_usuario () {
+    this.navController.navigateForward (['onboarding-no-usuario']);
+  }
 
 }

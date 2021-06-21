@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-onboarding-no-usuario',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OnboardingNoUsuarioPage implements OnInit {
 
-  constructor() { }
+  constructor(private navController: NavController) { }
 
   ngOnInit() {
+  }
+
+  view_onboarding_no_usuario_uno () {
+    this.navController.navigateForward (['onboarding-no-usuario-uno']);
   }
 
 }

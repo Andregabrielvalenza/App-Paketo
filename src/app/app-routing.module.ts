@@ -43,6 +43,22 @@ const routes: Routes = [
     path: 'registro-sucursal-slider',
     loadChildren: () => import('./registro-sucursal-slider/registro-sucursal-slider.module').then( m => m.RegistroSucursalSliderPageModule)
   },
+  {
+    path: 'onboarding-no-usuario-uno',
+    loadChildren: () => import('./onboarding-no-usuario-uno/onboarding-no-usuario-uno.module').then( m => m.OnboardingNoUsuarioUnoPageModule)
+  },
+  {
+    path: 'gracias-comprar-uno',
+    loadChildren: () => import('./gracias-comprar-uno/gracias-comprar-uno.module').then( m => m.GraciasComprarUnoPageModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
+  },
+  {
+    path: 'incio',
+    loadChildren: () => import('./incio/incio.module').then( m => m.IncioPageModule)
+  },
 ];
 
 @NgModule({
