@@ -14,7 +14,7 @@ export class InicioPage implements OnInit {
   }
 
   openEnd() {
-    this.menu.open('first');
+    this.menu.open();
   }
 
   slideOpts = {
