@@ -1,8 +1,15 @@
 <ion-app>
-  <ion-menu side="start" menuId="first" contentId="main">
-    <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Start Menu</ion-title>
+  <ion-menu side="start" menuId="first" contentId="main" mode="ios" class="my-custom-menu">
+    <ion-button mode="ios" class="btn-close-menu"><ion-icon name="close" class="icon-close"></ion-icon></ion-button>
+    <ion-header class="ion-no-border ion-no-padding">
+      <ion-toolbar class="ion-no-padding">
+        <ion-card class="card-nav">
+          <ion-avatar><ion-icon name="person" class="icon-person"></ion-icon></ion-avatar>
+          <div>
+            <ion-label class="label-nombre">Nombre de usuario</ion-label>
+            <h1 class="h1-nombre-empresa">Nombre de empresa</h1>
+          </div>
+        </ion-card>
       </ion-toolbar>
     </ion-header>
     <ion-content>
@@ -15,5 +22,5 @@
       </ion-list>
     </ion-content>
   </ion-menu>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
