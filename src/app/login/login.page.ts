@@ -18,4 +18,8 @@ export class LoginPage implements OnInit {
     this.navController.navigateForward (['cambio-contrasena']);
   }
 
+  view_inicio () {
+    this.navController.navigateForward (['inicio']);
+  }
+
 }
