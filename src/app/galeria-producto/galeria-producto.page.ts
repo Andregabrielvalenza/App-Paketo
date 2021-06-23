@@ -27,6 +27,8 @@ export class GaleriaProductoPage implements OnInit {
       message: 'Para editar la cantidad, anda a “mi carrito”',
       position: 'top',
       cssClass: 'toast-custom-class',
+      mode: 'ios',
+      duration: 1000,
     }).then((toast) => {
       toast.present();
     });
