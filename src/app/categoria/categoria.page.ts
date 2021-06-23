@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuController } from '@ionic/angular';
+import { MenuController, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-categoria',
@@ -8,7 +8,7 @@ import { MenuController } from '@ionic/angular';
 })
 export class CategoriaPage implements OnInit {
 
-  constructor(private menu: MenuController) { }
+  constructor(private menu: MenuController,private navController: NavController) { }
 
   ngOnInit() {
   }
@@ -23,5 +23,8 @@ export class CategoriaPage implements OnInit {
     spaceBetween: 10,
   };
   
+  view_galeria () {
+    this.navController.navigateForward (['galeria-producto']);
+  }
 
 }
