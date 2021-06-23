@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { NavController, ToastController} from '@ionic/angular';
 
 @Component({
   selector: 'app-galeria-producto',
@@ -8,7 +8,10 @@ import { NavController } from '@ionic/angular';
 })
 export class GaleriaProductoPage implements OnInit {
 
-  constructor(private navController: NavController) { }
+  constructor(
+    private navController: NavController, 
+    public toastController: ToastController
+    ) { }
 
   ngOnInit() {
   }
@@ -16,6 +19,17 @@ export class GaleriaProductoPage implements OnInit {
 
   view_detalle_producto () {
     this.navController.navigateForward (['detalle-producto']);
+  }
+
+  async presentToast() {
+    this.toastController.create({
+      header: 'Agregado correctamente',
+      message: 'Para editar la cantidad, anda a “mi carrito”',
+      position: 'top',
+      cssClass: 'toast-custom-class',
+    }).then((toast) => {
+      toast.present();
+    });
   }
 
 }
