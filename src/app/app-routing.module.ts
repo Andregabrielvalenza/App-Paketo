@@ -67,6 +67,14 @@ const routes: Routes = [
     path: 'galeria-producto',
     loadChildren: () => import('./galeria-producto/galeria-producto.module').then( m => m.GaleriaProductoPageModule)
   },
+  {
+    path: 'favoritos',
+    loadChildren: () => import('./favoritos/favoritos.module').then( m => m.FavoritosPageModule)
+  },
+  {
+    path: 'historial',
+    loadChildren: () => import('./historial/historial.module').then( m => m.HistorialPageModule)
+  },
 ];
 
 @NgModule({
