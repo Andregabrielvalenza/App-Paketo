@@ -27,4 +27,8 @@ export class InicioPage implements OnInit {
   view_categoria () {
     this.navController.navigateForward (['categoria']);
   }
+
+  view_sucursal () {
+    this.navController.navigateForward (['sucursales']);
+  }
 }

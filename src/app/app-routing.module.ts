@@ -83,6 +83,26 @@ const routes: Routes = [
     path: 'carrito',
     loadChildren: () => import('./carrito/carrito.module').then( m => m.CarritoPageModule)
   },
+  {
+    path: 'checkout',
+    loadChildren: () => import('./checkout/checkout.module').then( m => m.CheckoutPageModule)
+  },
+  {
+    path: 'sobre-paketo',
+    loadChildren: () => import('./sobre-paketo/sobre-paketo.module').then( m => m.SobrePaketoPageModule)
+  },
+  {
+    path: 'sucursales',
+    loadChildren: () => import('./sucursales/sucursales.module').then( m => m.SucursalesPageModule)
+  },
+  {
+    path: 'garcias-compra-dos',
+    loadChildren: () => import('./garcias-compra-dos/garcias-compra-dos.module').then( m => m.GarciasCompraDosPageModule)
+  },
+  {
+    path: 'datos-bancarios',
+    loadChildren: () => import('./datos-bancarios/datos-bancarios.module').then( m => m.DatosBancariosPageModule)
+  },
 ];
 
 @NgModule({
