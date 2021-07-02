@@ -103,6 +103,10 @@ const routes: Routes = [
     path: 'datos-bancarios',
     loadChildren: () => import('./datos-bancarios/datos-bancarios.module').then( m => m.DatosBancariosPageModule)
   },
+  {
+    path: 'ajuste',
+    loadChildren: () => import('./ajuste/ajuste.module').then( m => m.AjustePageModule)
+  },
 ];
 
 @NgModule({

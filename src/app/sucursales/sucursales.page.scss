@@ -147,6 +147,73 @@ ion-content
             margin-top: 0.625rem;
         }
     }
+    ion-card-content
+    {
+        margin-top: 1rem;
+        padding: 0.625rem 0.625rem;
+        background: #F7F7F7;
+        position: relative;
+        .h6-favorito
+        {
+            color: #4B4B4B;
+            font-family: AvenirBlack;
+            margin: 0px;
+            font-size: 0.8125rem;
+        }
+        .p-descrip-favorito
+        {
+            color: #4B4B4B;
+            font-family: AvenirMedium;
+            margin: 0px;
+            font-size: 0.8125rem;
+        }
+        ion-fab-button
+        {
+            width: 1.875rem;
+            height: 1.875rem;
+            --background: #FFFFFF;
+            --background-activated: #ffffff;
+            --close-icon-font-size: #4B4B4B;
+            --color: #4B4B4B;
+            --close-icon-font-size: 1.125rem;
+            font-size: 0px;
+            ion-icon
+            {
+                color: #4B4B4B; 
+            }
+        }
+        ion-fab-list
+        {
+            margin-bottom: 2.0625rem;
+            margin-left: -0.8125rem;
+            margin-top: 0px;
+        }
+        .btn-edit-delete
+        {
+            position: absolute;
+            right: 1rem;
+            --background: #FFFFFF;
+            --background-activated: #ffffff;
+            --padding-start: 0px;
+            --padding-end: 0px;
+            width: 2.1875rem;
+            height: 2.1875rem;
+            margin: 0px;
+            --border-radius: 8px;
+            ion-icon
+            {
+                color: #4B4B4B; 
+            } 
+        }
+        .edit-bottom
+        {
+            bottom: 3.4375rem;
+        }
+        .delete-bottom
+        {
+            bottom: 0.625rem;
+        }
+    }
 }
 .col-favoritos
 {
@@ -186,6 +253,13 @@ ion-footer
         padding-left: 1.875rem;
         padding-right: 1.875rem;
     }
+    .card-favorito
+    {
+        ion-card-content
+        {
+            padding: 0.625rem 1.875rem;
+        }
+    }
 }
 @media (min-width: 768px)
 {
@@ -209,5 +283,12 @@ ion-footer
     .col-favoritos
     {
         padding: 0px 1rem;
+    }
+    .card-favorito
+    {
+        ion-card-content
+        {
+            padding: 0.625rem 0.625rem;
+        }
     }
 }
